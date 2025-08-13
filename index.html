@@ -1,17 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Unlimited Blog Views</title>
 </head>
-
 <body>
-
-
-
     <input id="url" placeholder="enter url here" type="text" name="url">
     <input type="number" placeholder="No. of views to get" name="" id="no">
     <button onclick="gv()">GET</button>
@@ -27,8 +20,8 @@
             url = document.getElementById("url").value;
             var j = document.getElementById("no").value;
             while (i < j) {
-                text += "<br>" + i + '<iframe class="iframe" width="560" height="0" src="' + url +
-                    '" frameborder="0" allow="accelerometer; autoplay="1"; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                text += "<br>" + i + '<iframe class="iframe" src="' + url +
+                    '" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                 i++;
             }
             document.getElementById("demo").innerHTML = text;
